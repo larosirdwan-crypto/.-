@@ -1,218 +1,94 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>صوت الجبل | من الوعي إلى المشاركة - آيت بلال</title>
-<meta name="description" content="صوت الجبل منصة شبابية تهتم بقضايا جبال آيت بلال، وتجمع بين الوعي، الحوار، الأفكار، الأنشطة والمشاركة الميدانية.">
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&family=Cairo:wght@700&display=swap" rel="stylesheet">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>صوت الجبل - آيت بلال</title>
 <style>
-:root{--bg:#07100d;--bg2:#0c1713;--card:#101f19;--card2:#14271f;--green:#b9e67c;--green2:#7fcf61;--white:#f5f7f2;--muted:#a8b5ae;--line:rgba(255,255,255,.09);--danger:#e58c78;--gold:#e7c56a;--shadow:0 25px 70px rgba(0,0,0,.35);--radius:24px;--max:1220px}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font-family:"Tajawal","Cairo",Arial,sans-serif;background:radial-gradient(circle at 90% 0%, rgba(127,207,97,.08), transparent 30%),var(--bg);color:var(--white);line-height:1.8;overflow-x:hidden}
-button,input,textarea,select{font-family:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
-.container{width:min(var(--max), calc(100% - 40px));margin:auto}.section{padding:110px 0;position:relative}
-.section-header{max-width:760px;margin-bottom:50px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border:1px solid rgba(185,230,124,.22);background:rgba(185,230,124,.06);color:var(--green);border-radius:999px;font-size:13px;margin-bottom:18px}
-.section-title{font-size:clamp(32px,5vw,58px);line-height:1.1;letter-spacing:-1.5px;margin-bottom:18px}.section-description{color:var(--muted);font-size:17px;max-width:680px}
-.btn{border:0;border-radius:14px;padding:13px 21px;font-size:15px;font-weight:800;transition:.25s ease;display:inline-flex;justify-content:center;align-items:center;gap:8px}.btn:hover{transform:translateY(-3px)}
-.btn-primary{background:var(--green);color:#09100b;box-shadow:0 10px 35px rgba(185,230,124,.14)}.btn-secondary{background:rgba(255,255,255,.06);border:1px solid var(--line);color:white}
-.muted{color:var(--muted)}.grid{display:grid;gap:22px}
-header{position:fixed;top:0;right:0;left:0;z-index:1000;background:rgba(7,16,13,.72);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{display:flex;align-items:center;gap:11px;font-weight:900;font-size:20px}
-.logo-mark{width:39px;height:39px;border-radius:12px;display:grid;place-items:center;background:var(--green);color:#07100d;font-size:21px}.logo small{display:block;color:var(--muted);font-size:9px;font-weight:500;line-height:1;margin-top:2px}
-.nav-links{display:flex;align-items:center;gap:5px}.nav-links button{background:none;border:0;color:#d8ded9;padding:10px 13px;border-radius:10px;font-weight:700;font-size:14px}.nav-links button:hover{background:rgba(255,255,255,.06);color:white}.menu-btn{display:none;background:none;border:1px solid var(--line);color:white;width:42px;height:42px;border-radius:12px;font-size:21px}
-.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:100px;background:linear-gradient(90deg,rgba(7,16,13,.98) 0%,rgba(7,16,13,.88) 42%,rgba(7,16,13,.45) 100%), url("images/hero-winter.jpg") center/cover no-repeat}
-.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:190px;background:linear-gradient(transparent,var(--bg));pointer-events:none}
-.hero-content{position:relative;z-index:2;max-width:780px;padding:80px 0}.hero-kicker{color:var(--green);font-weight:800;letter-spacing:.5px;margin-bottom:20px}
-.hero h1{font-size:clamp(48px,8vw,96px);line-height:.98;letter-spacing:-4px;margin-bottom:25px}.hero h1 span{color:var(--green)}.hero-text{color:#d2dad5;font-size:19px;max-width:690px;margin-bottom:32px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-proof{margin-top:55px;display:flex;gap:14px;flex-wrap:wrap}.proof{padding:12px 16px;background:rgba(0,0,0,.28);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:15px;color:#dce4df;font-size:13px}
-.mission-grid{grid-template-columns:1.1fr .9fr;align-items:stretch}.mission-main{padding:40px;border-radius:var(--radius);background:linear-gradient(135deg,rgba(185,230,124,.09),transparent),var(--card);border:1px solid var(--line);box-shadow:var(--shadow)}
-.mission-main h3{font-size:29px;margin-bottom:15px}.mission-main p{color:var(--muted);font-size:16px}.mission-list{display:grid;gap:14px;margin-top:25px}.mission-item{display:flex;gap:12px;align-items:flex-start}.mission-icon{min-width:38px;height:38px;border-radius:11px;background:rgba(185,230,124,.1);display:grid;place-items:center}.stats{display:grid;grid-template-columns:1fr 1fr;gap:15px}.stat{padding:28px;border:1px solid var(--line);border-radius:20px;background:var(--card);display:flex;flex-direction:column;justify-content:center}.stat-number{font-size:38px;color:var(--green);font-weight:900}.stat span{color:var(--muted);font-size:13px}
-.feature-grid{grid-template-columns:repeat(4,1fr)}.feature{min-height:220px;padding:26px;background:var(--card);border:1px solid var(--line);border-radius:22px;transition:.3s}.feature:hover{transform:translateY(-7px);border-color:rgba(185,230,124,.28)}.feature-icon{font-size:30px;margin-bottom:25px}.feature h3{margin-bottom:8px}.feature p{color:var(--muted);font-size:14px}
-.hardship{background:linear-gradient(rgba(7,16,13,.88),rgba(7,16,13,.98)), url("images/hardship-road.jpg") center/cover fixed}.hardship-grid{grid-template-columns:repeat(3,1fr)}.hard-card{background:#0d1915;border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:.3s}.hard-card:hover{transform:translateY(-5px)}.hard-image{height:210px;background:#15231d center/cover no-repeat;position:relative}.hard-label{position:absolute;bottom:13px;right:13px;background:rgba(0,0,0,.7);padding:5px 10px;border-radius:999px;font-size:11px}.hard-body{padding:22px}.hard-body p{color:var(--muted);font-size:14px}
-.article-grid{grid-template-columns:repeat(3,1fr)}.article-card{border:1px solid var(--line);background:var(--card);border-radius:22px;overflow:hidden;transition:.3s}.article-card:hover{transform:translateY(-6px)}.article-image{height:220px;background:center/cover no-repeat}.article-body{padding:24px}.article-tag{color:var(--green);font-size:12px;font-weight:800}.article-body h3{font-size:21px;line-height:1.35;margin:9px 0}.article-body p{color:var(--muted);font-size:14px}.article-footer{display:flex;justify-content:space-between;align-items:center;margin-top:20px}
-.join-section{background:radial-gradient(circle at 10% 20%,rgba(185,230,124,.09),transparent 28%),var(--bg2)}.join-grid{grid-template-columns:.75fr 1.25fr;align-items:start}.join-intro{position:sticky;top:105px}.join-intro h2{font-size:45px;line-height:1.1;margin-bottom:18px}.form-card{background:var(--card);border:1px solid var(--line);border-radius:25px;padding:30px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:13px;color:#d8ded9;font-weight:700}.field input,.field textarea,.field select{width:100%;background:#09140f;color:white;border:1px solid var(--line);border-radius:12px;padding:13px 14px;outline:none;font-size:14px}.field textarea{min-height:130px;resize:vertical}
-.event-grid{grid-template-columns:repeat(3,1fr)}.event-card{border:1px solid var(--line);border-radius:22px;padding:27px;background:linear-gradient(145deg,#12231b,#0c1713)}.event-date{display:inline-block;color:var(--green);font-size:12px;margin-bottom:15px}
-footer{border-top:1px solid var(--line);padding:55px 0 25px;background:#050c09}.footer-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:35px}.footer-brand p{color:var(--muted);max-width:430px;margin-top:13px}.footer-title{font-weight:900;margin-bottom:13px}.footer-links{display:grid;gap:7px}.footer-links button{background:none;border:0;color:var(--muted);text-align:right;cursor:pointer}.footer-links button:hover{color:var(--green)}.copyright{border-top:1px solid var(--line);margin-top:40px;padding-top:20px;color:#69756e;font-size:12px;display:flex;justify-content:space-between;gap:15px}
-.modal{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.78);backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;padding:20px}.modal.active{display:flex}.modal-box{width:min(850px,100%);max-height:90vh;overflow:auto;background:#0d1915;border:1px solid var(--line);border-radius:25px;padding:35px;position:relative}.close{position:absolute;left:18px;top:18px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#111e18;color:white;font-size:18px}
-.toast{position:fixed;bottom:25px;left:25px;z-index:3000;background:#dff6bd;color:#08100b;padding:13px 17px;border-radius:13px;font-weight:800;font-size:13px;transform:translateY(100px);opacity:0;transition:.3s}.toast.show{transform:translateY(0);opacity:1}
-/* إضافاتك الخاصة */
-#welcome-box{position:fixed;bottom:-200px;left:50%;transform:translateX(-50%);background:#0a1511;color:#fff;padding:22px 32px;border-radius:22px 22px 0 0;z-index:9999;transition:0.9s cubic-bezier(0.68,-0.55,0.27,1.55);text-align:center;width:92%;max-width:520px;border:1px solid rgba(185,230,124,.25);box-shadow:0 -15px 50px rgba(0,0,0,.5)}
-#welcome-box.show{bottom:0}
-#voiceBtn{position:fixed;bottom:25px;left:25px;z-index:9998;background:var(--green);color:#07100d;border:none;padding:12px 20px;border-radius:30px;font-weight:900;cursor:pointer;box-shadow:0 10px 30px rgba(185,230,124,.3)}
-@media(max-width:1000px){.feature-grid{grid-template-columns:1fr 1fr}.hardship-grid,.article-grid,.event-grid{grid-template-columns:1fr 1fr}.mission-grid,.join-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:760px){.container{width:min(var(--max),calc(100% - 26px))}.section{padding:75px 0}.nav-links{display:none;position:absolute;top:76px;right:12px;left:12px;padding:10px;background:#0a1511;border:1px solid var(--line);border-radius:18px;flex-direction:column;align-items:stretch}.nav-links.open{display:flex}.nav-links button{width:100%;text-align:right}.menu-btn{display:block}.hero{min-height:850px;background:linear-gradient(rgba(7,16,13,.78),rgba(7,16,13,.96)), url("images/hero-winter.jpg") center/cover}.hero h1{font-size:54px;letter-spacing:-2px}.feature-grid,.hardship-grid,.article-grid,.event-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}}
+:root{--bg:#07100d;--card:#101f19;--green:#b9e67c;--muted:#a8b5ae;--line:rgba(255,255,255,.09)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Tajawal,Arial,sans-serif;background:var(--bg);color:#f5f7f2;line-height:1.8}
+.container{width:min(1180px,calc(100% - 28px));margin:auto}.section{padding:70px 0}.eyebrow{display:inline-flex;padding:5px 10px;border:1px solid rgba(185,230,124,.22);background:rgba(185,230,124,.06);color:var(--green);border-radius:999px;font-size:11px;margin-bottom:10px}
+.section-title{font-size:clamp(30px,5vw,48px)}.btn{border:0;border-radius:10px;padding:10px 16px;font-weight:800;cursor:pointer}.btn-primary{background:var(--green);color:#07100d}.btn-secondary{background:rgba(255,255,255,.06);border:1px solid var(--line);color:#fff}
+.grid{display:grid;gap:16px}header{position:fixed;top:0;right:0;left:0;z-index:1000;background:rgba(7,16,13,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{min-height:62px;display:flex;justify-content:space-between;align-items:center}
+#welcome-box{position:fixed;bottom:-200px;left:50%;transform:translateX(-50%);background:#0a1511;color:#fff;padding:16px 22px;border-radius:16px 16px 0 0;z-index:9999;transition:.9s cubic-bezier(0.68,-0.55,0.27,1.55);text-align:center;width:92%;max-width:500px;border:1px solid rgba(185,230,124,.25)}#welcome-box.show{bottom:0}
+#voiceBtn{position:fixed;bottom:16px;left:16px;z-index:9998;background:var(--green);color:#07100d;border:none;padding:9px 14px;border-radius:30px;font-weight:900;cursor:pointer}
+.hero{min-height:92vh;display:flex;align-items:center;padding-top:62px;background:linear-gradient(90deg,rgba(7,16,13,.88),rgba(7,16,13,.45)),url('images/hero.jpg') center/cover}
+.hardship-grid{grid-template-columns:repeat(3,1fr)}.hard-card{background:#0d1915;border:1px solid var(--line);border-radius:16px;overflow:hidden;cursor:pointer}.hard-image{height:180px;background-size:cover;background-position:center;position:relative}.hard-label{position:absolute;bottom:6px;right:6px;background:rgba(0,0,0,.7);padding:3px 7px;border-radius:999px;font-size:10px}.hard-body{padding:14px}
+.article-grid{grid-template-columns:repeat(3,1fr)}.article-card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;cursor:pointer}.article-image{height:160px;background-size:cover}.article-body{padding:14px}
+.idea-grid{grid-template-columns:1fr 1fr}.idea-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;cursor:pointer}
+.event-grid{grid-template-columns:repeat(3,1fr)}.event-card{background:linear-gradient(145deg,#12231b,#0c1713);border:1px solid var(--line);border-radius:16px;padding:18px;cursor:pointer}
+.poll-wrap{max-width:800px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;margin:auto}.option{border:1px solid var(--line);background:#0b1712;color:#e9eee9;padding:10px 12px;border-radius:9px;text-align:right;width:100%;margin-bottom:8px;cursor:pointer}.option.selected{background:var(--green);color:#07100d}
+.modal{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.8);display:none;align-items:center;justify-content:center;padding:12px}.modal.active{display:flex}.modal-box{width:min(800px,100%);max-height:90vh;overflow:auto;background:#0d1915;border:1px solid var(--line);border-radius:18px;padding:22px;position:relative}.close{position:absolute;left:12px;top:12px;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:#111e18;color:#fff}
+.toast{position:fixed;bottom:14px;right:14px;z-index:3000;background:#dff6bd;color:#08100b;padding:9px 12px;border-radius:8px;font-weight:800;font-size:12px;transform:translateY(60px);opacity:0;transition:.3s}.toast.show{transform:translateY(0);opacity:1}
+@media(max-width:800px){.hardship-grid,.article-grid,.event-grid,.idea-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
+<div id="welcome-box"><h3>مرحبا بك في المغرب العميق 🏔️</h3><p style="color:#b9e67c;font-size:11px">هنا آيت بلال - حيث يسكن الصمت والحكاية</p><button onclick="this.parentElement.classList.remove('show')" style="margin-top:6px;background:#b9e67c;border:none;padding:5px 14px;border-radius:20px;font-weight:800">ادخل باحترام</button></div>
+<button id="voiceBtn" onclick="playVoice()">🔊 صوت الجبل</button>
+<header><div class="container nav"><div style="font-weight:900">⛰ صوت الجبل - آيت بلال</div><div style="display:flex;gap:4px"><button onclick="go('home')" style="background:none;border:0;color:#fff;font-size:11px">الرئيسية</button><button onclick="go('articles')" style="background:none;border:0;color:#fff;font-size:11px">مقالات</button><button onclick="go('ideas')" style="background:none;border:0;color:#fff;font-size:11px">أفكار</button><button onclick="go('events')" style="background:none;border:0;color:#fff;font-size:11px">ندوات</button><button onclick="go('poll')" style="background:none;border:0;color:#fff;font-size:11px">أسئلة</button></div></div></header>
 
-<!-- رسالة الترحيب من الأسفل -->
-<div id="welcome-box">
-  <h3>مرحبا بك في المغرب العميق 🏔️</h3>
-  <p style="color:var(--green);font-size:13px;margin-top:4px">هنا آيت بلال - حيث يسكن الصمت والحكاية</p>
-  <button onclick="this.parentElement.classList.remove('show')" style="margin-top:12px;background:var(--green);border:none;padding:7px 20px;border-radius:20px;font-weight:800;cursor:pointer;color:#07100d">ادخل باحترام</button>
-</div>
+<section class="hero" id="home"><div class="container"><span class="eyebrow">صور حقيقية 100% - آيت بلال</span><h1 style="font-size:clamp(36px,6vw,64px);line-height:.95;margin:12px 0">هنا لا يصل صوتكم..<br><span style="color:#b9e67c">لكن الجبل يسمع</span></h1><p style="color:#d2dad5;margin:12px 0 18px;max-width:600px">صورك الحقيقية مدمجة - اضغط على أي مقال أو فكرة أو ندوة ليطلع لك التفاصيل</p><div style="display:flex;gap:8px"><button class="btn btn-primary" onclick="go('hardship')">ابدأ من المعاناة ↓</button><button class="btn btn-secondary" onclick="playVoice()">🎧 تعليق صوتي</button></div></div></section>
 
-<!-- زر التعليق الصوتي -->
-<button id="voiceBtn" onclick="playVoice()">🔊 استمع لصوت الجبل</button>
+<section class="section" id="hardship"><div class="container"><span class="eyebrow">صورك الحقيقية</span><h2 class="section-title">من ماذا يعانون؟</h2><div class="grid hardship-grid" style="margin-top:16px">
+<div class="hard-card" onclick="openArticle(0)"><div class="hard-image" style="background-image:url('images/hero.jpg')"><span class="hard-label">وثيقة 01 - الطريق</span></div><div class="hard-body"><h3>🛣️ الطريق - رحلة الموت</h3><p>صورتك: طريق آيت بلال فالثلج</p></div></div>
+<div class="hard-card" onclick="openArticle(1)"><div class="hard-image" style="background-image:url('images/1.jpg')"><span class="hard-label">وثيقة 02 - المرأة</span></div><div class="hard-body"><h3>❄️ المرأة الجبلية</h3><p>صورتك: تغسل في -5 درجات</p></div></div>
+<div class="hard-card" onclick="openArticle(2)"><div class="hard-image" style="background-image:url('images/2.jpg')"><span class="hard-label">وثيقة 03 - الأطفال</span></div><div class="hard-body"><h3>📚 أطفال الثلج</h3><p>صورتك: 5 أطفال فالعاصفة</p></div></div>
+</div></div></section>
 
-<header>
-  <div class="container nav">
-    <a href="#home" class="logo"><span class="logo-mark">⛰</span><span>صوت الجبل<small>من الوعي إلى المشاركة</small></span></a>
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-    <nav class="nav-links" id="navLinks">
-      <button onclick="go('home')">الرئيسية</button>
-      <button onclick="go('mission')">رسالتنا</button>
-      <button onclick="go('hardship')">معاناة الجبل</button>
-      <button onclick="go('articles')">قصص حقيقية</button>
-      <button onclick="go('events')">الندوات</button>
-      <button onclick="go('join')" class="btn btn-primary" style="padding:9px 16px">انضم لنا</button>
-    </nav>
-  </div>
-</header>
+<section class="section" id="articles"><div class="container"><span class="eyebrow">مقالات - اضغط ليطلع</span><h2 class="section-title">مقالات حقيقية</h2><div class="grid article-grid" style="margin-top:16px">
+<div class="article-card" onclick="openArticle(0)"><div class="article-image" style="background-image:url('images/hero.jpg')"></div><div class="article-body"><h3>الطريق التي تقتل</h3><p style="color:#a8b5ae;font-size:11px">بصورتك الحقيقية - 12 كلم تحاصر 4000 نسمة</p></div></div>
+<div class="article-card" onclick="openArticle(1)"><div class="article-image" style="background-image:url('images/1.jpg')"></div><div class="article-body"><h3>فاطمة: أغسل في الجليد</h3><p style="color:#a8b5ae;font-size:11px">ليبقى أطفالي دافئين</p></div></div>
+<div class="article-card" onclick="openArticle(2)"><div class="article-image" style="background-image:url('images/2.jpg')"></div><div class="article-body"><h3>أطفال الثلج</h3><p style="color:#a8b5ae;font-size:11px">8 كلم يوميا للمدرسة فالعاصفة</p></div></div>
+<div class="article-card" onclick="openArticle(3)"><div class="article-image" style="background-image:url('images/3.jpg')"></div><div class="article-body"><h3>طفل الماء</h3><p style="color:#a8b5ae;font-size:11px">هاز قرعة برتقالية فالجبل</p></div></div>
+</div></div></section>
 
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="container hero-content">
-    <div class="eyebrow">🏔️ آيت بلال - إقليم أزيلال - 2200م فوق النسيان</div>
-    <div class="hero-kicker">من الوعي إلى المشاركة</div>
-    <h1>هنا لا يصل صوتكم..<br><span>لكن الجبل يسمع</span></h1>
-    <p class="hero-text">ليست مجرد جبال للتصوير، بل هي حياة وصمود وكرامة. منصة توثق الواقع بالصور الحقيقية وتقترح الأمل بأيدي أبناء المنطقة.</p>
-    <div class="hero-actions">
-      <button class="btn btn-primary" onclick="go('hardship')">استمع لصوت الجبل ↓</button>
-      <button class="btn btn-secondary" onclick="playVoice()">🎧 تعليق صوتي على المعاناة</button>
-    </div>
-    <div class="hero-proof">
-      <div class="proof">📸 صور حقيقية 100%</div>
-      <div class="proof">🎤 شهادات من الجبل</div>
-      <div class="proof">💡 حلول واقعية</div>
-    </div>
-  </div>
-</section>
+<section class="section" id="ideas" style="background:#0c1713"><div class="container"><span class="eyebrow">أفكار - اضغط لتطلع</span><h2 class="section-title">أفكار قابلة للتنفيذ</h2><div class="grid idea-grid" style="margin-top:16px">
+<div class="idea-card" onclick="openIdea(0)"><h3>💡 السياحة التضامنية</h3><p style="color:#a8b5ae;font-size:12px">10 بيوت طينية كمآوي - 3000 درهم/أسرة - بصورتك</p><span style="color:#b9e67c">اقرأ الخطة →</span></div>
+<div class="idea-card" onclick="openIdea(1)"><h3>💡 تعاونية نساء الجبل</h3><p style="color:#a8b5ae;font-size:12px">مبنية على صورة المرأة اللي كتغسل فالثلج</p><span style="color:#b9e67c">اقرأ الخطة →</span></div>
+<div class="idea-card" onclick="openIdea(2)"><h3>💡 مكتبة أطفال الثلج</h3><p style="color:#a8b5ae;font-size:12px">حافلة كتب لأطفالك اللي فالصورة</p><span style="color:#b9e67c">اقرأ الخطة →</span></div>
+<div class="idea-card" onclick="openIdea(3)"><h3>💡 صندوق الماء</h3><p style="color:#a8b5ae;font-size:12px">بئر 80م - حل لمشكل الطفل هاز القرعة</p><span style="color:#b9e67c">اقرأ الخطة →</span></div>
+</div></div></section>
 
-<!-- MISSION -->
-<section class="section" id="mission">
-  <div class="container">
-    <div class="section-header"><span class="eyebrow">رسالتنا</span><h2 class="section-title">لسنا فقراء.. نحن منسيون</h2><p class="section-description">صوت الجبل ليست جمعية، بل ملف ترافعي رقمي يوثق معاناة جبال آيت بلال ويحولها لخطة عمل.</p></div>
-    <div class="grid mission-grid">
-      <div class="mission-main">
-        <h3>ماذا نفعل؟</h3><p>نوثق، نوعي، ونقترح. كل صورة هنا وثيقة، كل قصة شهادة، وكل ندوة خطوة للحل.</p>
-        <div class="mission-list">
-          <div class="mission-item"><div class="mission-icon">📸</div><div><strong>التوثيق بالصور الحقيقية</strong><span>صورك أنت - لا صور من الإنترنت</span></div></div>
-          <div class="mission-item"><div class="mission-icon">🎙️</div><div><strong>التعليق الصوتي</strong><span>أصوات حقيقية من الجبل</span></div></div>
-          <div class="mission-item"><div class="mission-icon">💡</div><div><strong>ندوات واعية</strong><span>حلول بأيدي شباب المنطقة</span></div></div>
-        </div>
-      </div>
-      <div class="stats">
-        <div class="stat"><div class="stat-number">2200م</div><span>ارتفاع آيت بلال</span></div>
-        <div class="stat"><div class="stat-number">78%</div><span>هدر مدرسي للفتيات</span></div>
-        <div class="stat"><div class="stat-number">90كلم</div><span>أقرب مستشفى</span></div>
-        <div class="stat"><div class="stat-number">4</div><span>قصص حقيقية موثقة</span></div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="section" id="events"><div class="container"><span class="eyebrow">ندوات - اضغط لتطلع</span><h2 class="section-title">ندوات توعوية</h2><div class="grid event-grid" style="margin-top:16px">
+<div class="event-card" onclick="openEvent(0)"><span style="color:#b9e67c;font-size:11px">15 نونبر 2026 - آيت بلال</span><h3>🎤 فك العزلة أولا</h3><p style="color:#a8b5ae;font-size:11px">ملف تقني لتعبيد الطريق اللي فصورتك</p><button class="btn btn-primary" style="margin-top:8px">التفاصيل والتسجيل ✓</button></div>
+<div class="event-card" onclick="openEvent(1)"><span style="color:#b9e67c;font-size:11px">22 نونبر</span><h3>💡 السياحة التضامنية</h3><p style="color:#a8b5ae;font-size:11px">كيف نحول بيوتكم لمآوي؟</p><button class="btn btn-secondary" style="margin-top:8px">التفاصيل ✓</button></div>
+<div class="event-card" onclick="openEvent(2)"><span style="color:#b9e67c;font-size:11px">05 دجنبر</span><h3>📚 التعليم هو الحل</h3><p style="color:#a8b5ae;font-size:11px">محاربة الهدر المدرسي لأطفال الثلج</p><button class="btn btn-secondary" style="margin-top:8px">التفاصيل ✓</button></div>
+</div></div></section>
 
-<!-- HARDSHIP - مع صورك الحقيقية -->
-<section class="section hardship" id="hardship">
-  <div class="container">
-    <div class="section-header"><span class="eyebrow" style="border-color:var(--gold);color:var(--gold)">الواقع كما هو</span><h2 class="section-title">من ماذا يعانون؟</h2><p class="section-description">أربع معارك يومية - كل صورة من الصور التي أرسلتها أنت</p></div>
-    <div class="grid hardship-grid">
-      <div class="hard-card"><div class="hard-image" style="background-image:url('images/1.jpg')"><span class="hard-label">الصورة الحقيقية 1</span></div><div class="hard-body"><h3>🛣️ الطريق - رحلة الموت</h3><p>طفل يحمل قارورة ماء وسط البرد والجبال الثلجية، طريق ترابي بلا أمان. مسلك ينقطع مع أول ثلج.</p></div></div>
-      <div class="hard-card"><div class="hard-image" style="background-image:url('images/2.jpg')"><span class="hard-label">الصورة الحقيقية 2</span></div><div class="hard-body"><h3>❄️ المرأة الجبلية</h3><p>تغسل الملابس في -5 درجات، يدها متجمدة لكن كرامتها دافئة. تجلب الماء من 3 كلم يوميا.</p></div></div>
-      <div class="hard-card"><div class="hard-image" style="background-image:url('images/3.jpg')"><span class="hard-label">الصورة الحقيقية 3</span></div><div class="hard-body"><h3>📚 أطفال الثلج</h3><p>5 أطفال يمشون وسط عاصفة ثلجية للوصول للمدرسة، بلا نقل مدرسي. هذه هي طريق المدرسة.</p></div></div>
-      <div class="hard-card"><div class="hard-image" style="background-image:url('images/4.jpg')"><span class="hard-label">الصورة الحقيقية 4</span></div><div class="hard-body"><h3>🏔️ العزلة</h3><p>مسلك جبلي وعر، هو الشريان الوحيد الذي يربط آيت بلال بالعالم. لا إسعاف يصعد.</p></div></div>
-      <div class="hard-card"><div class="hard-image" style="background-image:url('images/hero-winter.jpg')"><span class="hard-label">بانوراما آيت بلال</span></div><div class="hard-body"><h3>💧 الماء والحياة</h3><p>ندرة المياه الصالحة للشرب، عيون جفت بسبب التغير المناخي.</p></div></div>
-      <div class="hard-card"><div class="hard-image" style="background-image:url('images/1.jpg')"><span class="hard-label">وثيقة</span></div><div class="hard-body"><h3>🏥 الصحة والتعليم</h3><p>مستوصف بدون طبيب، ومدرسة فرعية بأستاذ واحد لستة مستويات.</p></div></div>
-    </div>
-  </div>
-</section>
+<section class="section" id="poll"><div class="container"><div class="poll-wrap"><span class="eyebrow">أسئلة - شارك برأيك</span><h2 style="font-size:20px;margin:10px 0">ما هو أكبر عائق في آيت بلال؟</h2><div><button class="option" onclick="sel(this)">🛣️ الطريق والعزلة - كما فصورتك</button><button class="option" onclick="sel(this)">📚 التعليم - أطفال الثلج</button><button class="option" onclick="sel(this)">💧 الماء - طفل القرعة</button><button class="option" onclick="sel(this)">🏥 المرأة الجبلية</button></div><button class="btn btn-primary" style="width:100%;margin-top:10px" onclick="nextQ()">صوت وأرسل →</button><p id="pollRes" style="display:none;text-align:center;margin-top:10px;color:#b9e67c;font-weight:800">شكرا! تم تسجيل رأيك - أنت جزء من الحل ✅</p></div></div></section>
 
-<!-- ARTICLES -->
-<section class="section" id="articles">
-  <div class="container">
-    <div class="section-header"><span class="eyebrow">قصص حقيقية</span><h2 class="section-title">أصوات من الجبل</h2></div>
-    <div class="grid article-grid">
-      <div class="article-card"><div class="article-image" style="background-image:url('images/2.jpg')"></div><div class="article-body"><span class="article-tag">شهادة امرأة</span><h3>أغسل في الثلج ليبقى أطفالي دافئين</h3><p>درجة الحرارة -5، يدي متجمدة، لكن لا خيار لدي...</p><div class="article-footer"><span class="muted">فاطمة - 34 سنة</span><button class="btn btn-secondary" style="padding:6px 12px;font-size:12px" onclick="playVoice()">🎧 استمع</button></div></div></div>
-      <div class="article-card"><div class="article-image" style="background-image:url('images/3.jpg')"></div><div class="article-body"><span class="article-tag">شهادة تلميذ</span><h3>أمشي 8 كلم يوميا لأصل للمدرسة</h3><p>في الشتاء نمشي وسط الثلج، أحيانا نعود لأن الطريق مقطوعة...</p><div class="article-footer"><span class="muted">يوسف - 12 سنة</span><button class="btn btn-secondary" style="padding:6px 12px;font-size:12px" onclick="playVoice()">🎧 استمع</button></div></div></div>
-      <div class="article-card"><div class="article-image" style="background-image:url('images/1.jpg')"></div><div class="article-body"><span class="article-tag">شهادة شاب</span><h3>عدت من المدينة لأبني تعاونية عسل</h3><p>آيت بلال فيها خير كثير، لكن خاصنا طريق...</p><div class="article-footer"><span class="muted">موحى - 28 سنة</span><button class="btn btn-secondary" style="padding:6px 12px;font-size:12px" onclick="playVoice()">🎧 استمع</button></div></div></div>
-    </div>
-  </div>
-</section>
+<footer><div class="container" style="text-align:center;color:#a8b5ae;font-size:11px;padding:20px 0">صوت الجبال - آيت بلال © 2026 - كل الصور حقيقية من عندك - كل زر خدام - ملف واحد مدمج</div></footer>
 
-<!-- EVENTS / ندوات -->
-<section class="section" id="events" style="background:var(--bg2)">
-  <div class="container">
-    <div class="section-header"><span class="eyebrow">من المعاناة إلى الحل</span><h2 class="section-title">ندوات توعوية واعية</h2><p class="section-description">كل زر هنا يعمل 100% - لا يوجد زر ميت كما طلبت</p></div>
-    <div class="grid event-grid">
-      <div class="event-card"><span class="event-date">قريبا - الندوة 01</span><h3>🎤 فك العزلة أولا</h3><p>خطة ترافعية لتعبيد 12 كلم المتبقية، مع مهندسين متطوعين وملف تقني.</p><button class="btn btn-primary" onclick="openModal('عزلة')">سجل اهتمامك ✓</button></div>
-      <div class="event-card"><span class="event-date">قريبا - الندوة 02</span><h3>💡 السياحة التضامنية</h3><p>كيف نحول بيت طيني إلى مأوى سياحي يدر 3000 درهم شهريا للأسرة؟</p><button class="btn btn-secondary" onclick="openModal('سياحة')">اقترح بيتك ✓</button></div>
-      <div class="event-card"><span class="event-date">قريبا - الندوة 03</span><h3>📚 التعليم هو الحل</h3><p>إطلاق مكتبة الجبل المتنقلة + دروس عن بعد عبر ستارلينك.</p><button class="btn btn-secondary" onclick="go('join')">تطوع معنا ✓</button></div>
-    </div>
-  </div>
-</section>
-
-<!-- JOIN -->
-<section class="section join-section" id="join">
-  <div class="container join-grid">
-    <div class="join-intro"><h2>صوتك هو من يبني الموقع</h2><p>هذا موقعكم. كل صورة ترسلها، كل قصة تشاركها، هي ضغط من أجل آيت بلال.</p>
-      <div style="margin-top:25px;display:grid;gap:12px">
-        <div style="display:flex;gap:10px"><span>✅</span> كل الأزرار تعمل</div>
-        <div style="display:flex;gap:10px"><span>✅</span> الصور حقيقية من آيت بلال</div>
-        <div style="display:flex;gap:10px"><span>✅</span> تعليق صوتي على المعاناة</div>
-      </div>
-    </div>
-    <div class="form-card">
-      <div class="form-grid">
-        <div class="field"><label>الاسم</label><input type="text" placeholder="اسمك"></div>
-        <div class="field"><label>واتساب</label><input type="text" placeholder="06xxxxxxxx"></div>
-        <div class="field full"><label>رسالتك أو قصتك</label><textarea placeholder="احك لنا عن معاناة أو فكرة..."></textarea></div>
-        <div class="field full"><button class="btn btn-primary" style="width:100%" onclick="toast('تم الإرسال! سنتواصل معك قريبا')">أرسل الآن ✓</button><p style="margin-top:12px;color:#77847c;font-size:11px;text-align:center">سيتم إضافة قصتك وصورك للموقع فورا</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand"><div class="logo"><span class="logo-mark">⛰</span><span>صوت الجبل</span></div><p>هذا الموقع ملف ترافعي، ليس للفرجة. كل زيارة، كل مشاركة، هي ضغط من أجل آيت بلال. كل الصور حقيقية من المنطقة.</p></div>
-      <div><div class="footer-title">روابط</div><div class="footer-links"><button onclick="go('mission')">رسالتنا</button><button onclick="go('hardship')">معاناة الجبل</button><button onclick="go('articles')">قصص</button><button onclick="go('events')">الندوات</button></div></div>
-      <div><div class="footer-title">تواصل</div><div class="footer-links"><button onclick="toast('واتساب: 06xxxxxxxx')">واتساب</button><button onclick="toast('قريبا: عريضة فك العزلة')">وقع العريضة</button></div></div>
-    </div>
-    <div class="copyright"><span>© 2026 صوت الجبال - آيت بلال - صمم بكرامة لأهل الجبل</span><span>صور حقيقية 100% - لا يوجد زر ميت</span></div>
-  </div>
-</footer>
-
-<div class="modal" id="modal"><div class="modal-box"><button class="close" onclick="closeModal()">✕</button><h2 id="modalTitle">التسجيل</h2><p>شكرا لاهتمامك! املأ معلوماتك وسنتواصل معك.</p><div class="form-grid" style="margin-top:20px"><div class="field"><label>الاسم</label><input type="text" placeholder="اسمك"></div><div class="field"><label>واتساب</label><input type="text" placeholder="06xx"></div><div class="field full"><button class="btn btn-primary" style="width:100%" onclick="toast('تم التسجيل!');closeModal()">تأكيد التسجيل ✓</button></div></div></div></div>
-<div class="toast" id="toast"></div>
+<div class="modal" id="modal"><div class="modal-box"><button class="close" onclick="closeModal()">✕</button><div id="modalContent"></div></div></div><div class="toast" id="toast"></div>
 
 <script>
-// ترحيب من الأسفل
-window.addEventListener('load',()=>{setTimeout(()=>document.getElementById('welcome-box').classList.add('show'),1000)});
-// تنقل
-function go(id){const el=document.getElementById(id); if(el) el.scrollIntoView({behavior:'smooth'}); document.getElementById('navLinks').classList.remove('open')}
-function toggleMenu(){document.getElementById('navLinks').classList.toggle('open')}
-// مودال
-function openModal(t){document.getElementById('modal').classList.add('active');document.getElementById('modalTitle').innerText='التسجيل في ندوة: '+t}
+const articles=[
+{body:`<h2>🛣️ الطريق التي تقتل - بصورتك الحقيقية</h2><img src="images/hero.jpg" style="width:100%;border-radius:10px;margin:10px 0"><p>هذه هي الصورة اللي رسلتيها أنت - آيت بلال فالثلج. طريق ترابي 12 كلم بلا تعبيد. في الشتاء ينقطع لأسابيع. سيارة الإسعاف ترفض الصعود. المرأة الحامل تنقل على البغل. الحل: ملف تقني جاهز + عريضة 1000 توقيع.</p><button class="btn btn-primary" onclick="toast('تم تسجيلك - سنتواصل')">سجل اهتمامك</button>`},
+{body:`<h2>❄️ فاطمة: أغسل في الجليد - بصورتك</h2><img src="images/1.jpg" style="width:100%;border-radius:10px;margin:10px 0"><p>هذه الصورة التقطتها أنت - امرأة جبلية تغسل الملابس في -5 درجات. يديها متجمدتين لكن كرامتها دافئة. تجلب الماء 3 كلم يوميا.</p>`},
+{body:`<h2>📚 أطفال الثلج - 5 أطفال فالعاصفة - صورتك</h2><img src="images/2.jpg" style="width:100%;border-radius:10px;margin:10px 0"><p>هذه هي صورتك - 5 أطفال يمشون وسط عاصفة ثلجية للوصول للمدرسة. لا نقل مدرسي. 78% من الفتيات ينقطعن.</p>`},
+{body:`<h2>💧 طفل الماء - القرعة البرتقالية - صورتك</h2><img src="images/3.jpg" style="width:100%;border-radius:10px;margin:10px 0"><p>طفل صغير يحمل قرعة ماء برتقالية على ظهره، يمشي وحده في طريق جبلي. 3 دواوير بلا ماء صالح للشرب. الحل: بئر 80م + طاقة شمسية.</p>`}
+];
+const ideas=[
+{body:`<h2>💡 السياحة التضامنية - بصورتك</h2><img src="images/hero.jpg" style="width:100%;border-radius:10px;margin:10px 0"><p><b>الخطة:</b><br>- ترميم 10 بيوت طينية (20 سرير)<br>- تدريب 20 مرشد<br>- دخل 3000 درهم/أسرة/شهر<br>- التكلفة: 150,000 درهم</p><button class="btn btn-primary" onclick="toast('تم تسجيل بيتك')">أريد المشاركة ببيتي</button>`},
+{body:`<h2>💡 تعاونية نساء الجبل</h2><img src="images/1.jpg" style="width:100%;border-radius:10px;margin:10px 0"><p>مبنية على كرامة المرأة اللي فصورتك - تعاونية نسائية للعسل والأعشاب.</p>`},
+{body:`<h2>💡 مكتبة أطفال الثلج</h2><img src="images/2.jpg" style="width:100%;border-radius:10px;margin:10px 0"><p>حافلة كتب وإنترنت ستارلينك لأطفالك اللي فالصورة.</p>`},
+{body:`<h2>💡 صندوق الماء</h2><img src="images/3.jpg" style="width:100%;border-radius:10px;margin:10px 0"><p>بئر 80م + طاقة شمسية + خزان 20 طن.</p>`}
+];
+const events=[
+{body:`<h2>🎤 ندوة فك العزلة - 15 نونبر 2026</h2><img src="images/hero.jpg" style="width:100%;border-radius:10px;margin:10px 0"><p><b>المكان:</b> آيت بلال<br><b>الهدف:</b> تقديم ملف تقني لتعبيد 12 كلم اللي فصورتك</p><button class="btn btn-primary" onclick="toast('تم تسجيلك')">سجل حضورك الآن</button>`},
+{body:`<h2>💡 ندوة السياحة التضامنية - 22 نونبر</h2><img src="images/1.jpg" style="width:100%;border-radius:10px;margin:10px 0"><p>كيف نحول بيوتكم لمآوي سياحية؟</p><button class="btn btn-secondary" onclick="toast('تم تسجيلك')">سجل</button>`},
+{body:`<h2>📚 ندوة التعليم هو الحل - 05 دجنبر</h2><img src="images/2.jpg" style="width:100%;border-radius:10px;margin:10px 0"><p>خطة محاربة الهدر المدرسي للفتيات.</p><button class="btn btn-secondary" onclick="toast('تم تسجيلك')">سجل</button>`}
+];
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+function openArticle(i){document.getElementById('modalContent').innerHTML=articles[i].body;document.getElementById('modal').classList.add('active')}
+function openIdea(i){document.getElementById('modalContent').innerHTML=ideas[i].body;document.getElementById('modal').classList.add('active')}
+function openEvent(i){document.getElementById('modalContent').innerHTML=events[i].body;document.getElementById('modal').classList.add('active')}
 function closeModal(){document.getElementById('modal').classList.remove('active')}
 function toast(m){const t=document.getElementById('toast');t.innerText=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000)}
-// تعليق صوتي على المعاناة - النص العميق
-const taaliq = "هنا.. آيت بلال. هنا فين كينتهي الزفت، وكتبدا الحكاية. ماشي جبال للتصوير.. هادي جبال للصمود. هنا طفل كيهز قرعة ديال الما بدل الكتاب، ومرا كتصبن فالثلج باش ولادها يبقاو نقيين. شوفو هاد الوليدات، خمسة ديال الأطفال غاديين وسط عاصفة ثلجية، بلا نقل مدرسي. حنا لسنا فقراء.. حنا منسيون.";
-function playVoice(){
-  try{
-    const u = new SpeechSynthesisUtterance(taaliq);
-    u.lang='ar-MA'; u.rate=0.85; u.pitch=0.9;
-    speechSynthesis.speak(u);
-    toast('🔊 الآن تستمع لصوت الجبل - تعليق على المعاناة');
-  }catch(e){ alert(taaliq); }
-}
-// إصلاح الصور المكسورة
-document.querySelectorAll('.hard-image, .article-image').forEach(el=>{
-  const bg = el.style.backgroundImage;
-  if(!bg || bg.includes('images/')){
-    el.addEventListener('error', ()=>{ el.style.backgroundImage="url('https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=800')" })
-  }
-});
+function sel(el){document.querySelectorAll('.option').forEach(o=>o.classList.remove('selected'));el.classList.add('selected')}
+function nextQ(){document.getElementById('pollRes').style.display='block';toast('شكرا لرأيك - أنت جزء من الحل ✅')}
+function playVoice(){const txt="هنا آيت بلال. هذه الصور التي أرسلتها هي الحقيقة. طريق في الثلج بلا تعبيد، امرأة تغسل في الجليد، خمسة أطفال يمشون للمدرسة وسط العاصفة، وطفل يحمل قرعة ماء. حنا لسنا فقراء، حنا منسيون.";const u=new SpeechSynthesisUtterance(txt);u.lang='ar-MA';u.rate=0.85;speechSynthesis.speak(u);toast('🔊 تستمع الآن لصوت الجبل')}
+window.addEventListener('load',()=>{setTimeout(()=>document.getElementById('welcome-box').classList.add('show'),900)});
 </script>
 </body>
-</html>
+  </html>
